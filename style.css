@@ -1,0 +1,76 @@
+body{
+  margin:0;
+  font-family:Segoe UI,Tahoma;
+  background:#0b1220;
+  color:#fff;
+}
+
+.hero{
+  background:linear-gradient(135deg,#38bdf8,#2dd4bf);
+  padding:60px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  margin:0;
+  font-size:36px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#121a2b;
+  padding:20px;
+  border-radius:20px;
+}
+
+.card h2{
+  color:#2dd4bf;
+  margin-bottom:15px;
+}
+
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.price-row:last-child{
+  border-bottom:none;
+}
+
+.price-right{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.price-right b{
+  color:#38bdf8;
+}
+
+.cart-btn{
+  cursor:pointer;
+  font-size:18px;
+}
+
+.cart-btn:hover{
+  transform:scale(1.2);
+}
+
+.footer{
+  text-align:center;
+  opacity:.6;
+  padding:20px;
+}
