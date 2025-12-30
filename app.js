@@ -1,5 +1,5 @@
 fetch("rates.json")
-.then(res => res.json())
+.then(r => r.json())
 .then(data => render(data))
 
 function render(data){
@@ -10,14 +10,14 @@ function render(data){
 
   data.games.forEach(game => {
     let html = `
-      <div class="card">
+      <section class="card">
         <h2>${game.name}</h2>
     `
 
     game.items.forEach(item => {
       html += `
         <div class="price-row">
-          <span>${item.name}</span>
+          <span class="price-name">${item.name}</span>
 
           <div class="price-right">
             <b>${item.price} บาท</b>
@@ -31,7 +31,7 @@ function render(data){
       `
     })
 
-    html += `</div>`
+    html += `</section>`
     box.innerHTML += html
   })
 }
