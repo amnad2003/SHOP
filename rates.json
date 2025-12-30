@@ -1,0 +1,36 @@
+{
+  "shopName": "VeryFun SHOP",
+  "orderLink": "https://www.facebook.com/profile.php?id=61576180022673",
+  "games": [
+    {
+      "name": "Roblox",
+      "items": [
+        { "name": "80 Robux",  "price": 32 },
+        { "name": "160 Robux", "price": 63 },
+        { "name": "240 Robux", "price": 85 },
+        { "name": "360 Robux", "price": 113 }
+      ]
+    },
+    {
+      "name": "Roblox-แพ็คพิเศษ",
+      "items": [
+        { "name": "500 Robux",   "price": 155 },
+        { "name": "1,000 Robux", "price": 300 },
+        { "name": "1,500 Robux", "price": 445 },
+        { "name": "2,000 Robux", "price": 595 },
+        { "name": "4,000 Robux", "price": 1180 },
+        { "name": "5,000 Robux", "price": 1450 },
+        { "name": "10,000 Robux","price": 2850 },
+        { "name": "20,000 Robux","price": 5500 }
+      ]
+    },
+    {
+      "name": "Roblox-Premium",
+      "items": [
+        { "name": "450 Robux",  "price": 155 },
+        { "name": "1,000 Robux","price": 300 },
+        { "name": "2,200 Robux","price": 620 }
+      ]
+    }
+  ]
+}
