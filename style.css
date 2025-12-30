@@ -1,10 +1,16 @@
-body{
+*{
+  box-sizing:border-box;
   margin:0;
-  font-family:Segoe UI,Tahoma;
+  padding:0;
+  font-family:Segoe UI,Tahoma,sans-serif;
+}
+
+body{
   background:#0b1220;
   color:#fff;
 }
 
+/* ===== HEADER ===== */
 .hero{
   background:linear-gradient(135deg,#38bdf8,#2dd4bf);
   padding:60px 20px;
@@ -12,14 +18,20 @@ body{
 }
 
 .hero h1{
-  margin:0;
   font-size:36px;
+  font-weight:700;
 }
 
+.hero p{
+  margin-top:6px;
+  opacity:.9;
+}
+
+/* ===== LAYOUT ===== */
 .container{
-  max-width:1100px;
+  max-width:1200px;
   margin:auto;
-  padding:30px 20px;
+  padding:35px 20px;
 }
 
 .grid{
@@ -28,21 +40,26 @@ body{
   gap:20px;
 }
 
+/* ===== CARD ===== */
 .card{
   background:#121a2b;
+  border-radius:18px;
   padding:20px;
-  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
 .card h2{
   color:#2dd4bf;
   margin-bottom:15px;
+  font-size:18px;
 }
 
+/* ===== PRICE ===== */
 .price-row{
   display:flex;
   justify-content:space-between;
-  padding:8px 0;
+  align-items:center;
+  padding:9px 0;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
@@ -63,14 +80,23 @@ body{
 .cart-btn{
   cursor:pointer;
   font-size:18px;
+  transition:.2s;
 }
 
 .cart-btn:hover{
-  transform:scale(1.2);
+  transform:scale(1.25);
 }
 
+/* ===== FOOTER ===== */
 .footer{
   text-align:center;
-  opacity:.6;
   padding:20px;
+  opacity:.6;
+  font-size:14px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+  .hero h1{ font-size:28px; }
+  .container{ padding:25px 15px; }
 }
